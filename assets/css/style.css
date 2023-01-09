@@ -6,10 +6,13 @@
 }
 body{
     background-color: #e9e9e0;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 p{
-    font-size: 1.25rem;
+    font-size: 1rem;
+    color: #333333;
 }
 
 .center{
@@ -26,15 +29,51 @@ p{
     font-family: "cormorat";
 }
 
+/* header */
+header{
+    padding-top: 1rem;
+    padding-right:2rem;
+    padding-left: 1.5rem;
+}
 
-/* main section */
+h1{
+    text-align: center;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+/* date section flex */
+.date{
+    display: flex;
+    justify-content:space-around;
+    border-top: 6px double #333333;
+    border-bottom: 6px double #333333;
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+
+.headline{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sponsors{
+    text-align: end;
+    padding-right: 4rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+
+/* main section grid container*/
 .gridContainerMainSection{
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     padding: .5rem;
 }
 
-/* article container */
+/* article grid container */
 .gridContainerArticle{
     width: 35vw;
     display: grid;
@@ -47,18 +86,8 @@ p{
 }
 
 article{
-    width: 18vw;
+    max-width: 18vw;
 }
-
-/* kitchen img */
-figure{
-    grid-column: 2/3;
-    width: 15rem;
-}
-figure img{
-    max-width: 38vw;
-}
-
 
 .knife{
     grid-column: 1/2;
@@ -67,6 +96,18 @@ figure img{
 .equipment{
     grid-column: 1/2;
 }
+
+/* kitchen img */
+figure{
+    grid-column: 2/3;
+    width: 15rem;
+}
+figure img{
+    max-width: 36vw;
+}
+
+
+/* aside add section grid container */
 aside{
     grid-row: 1/3;
     grid-column: 3/4;
@@ -78,28 +119,26 @@ aside{
     text-align: center;
 }
 
-.ikea{
-    width: 15rem;
-    filter: grayscale(1);
-}
 div{
     border: 5px double grey;
-    padding: 1rem;
-    width: 18rem;
-}
-.knifeAdd{
-    font-size: 2rem;
-}
-
-.center{
-    align-self: center;
+    padding: .5rem;
+    width: 19rem;
 }
 
 .yourAdd{
     font-size: 3.5rem;
     width: 17rem;
 }
+
+.knifeAdd{
+    font-size: 2rem;
+}
 .bestKnives{
     color:grey;
     text-decoration:underline;
+}
+
+.ikeaLogo{
+    width: 15rem;
+    filter: grayscale(1);
 }
