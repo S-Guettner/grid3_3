@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display:grid;
+    width: 100vw;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.gridContainer{
+    width: 40vw;
+    display: grid;
+    gap:.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.5fr 2fr;
+}
+.articleTitle{
+    font-size: 1.5rem;
+}
+
+.kitchen{
+    width: 30rem;
+    padding-right: .5rem;
+}
+
+.ikea{
+    width: 15rem;
+}
+aside{
+    display: grid;
+    text-align: center;
+    padding-right: .5rem;
+}
+div{
+    margin-bottom: .5rem;
+    margin-top: 0.5rem;
+    padding-top: 2rem;
+    border: 2px solid;
+    outline: 2px solid;
+    outline-offset: .2rem;
+}
