@@ -11,7 +11,6 @@ body{
 }
 
 p{
-    font-size: 1rem;
     color: #333333;
 }
 
@@ -28,6 +27,7 @@ p{
 .fontCormorat{
     font-family: "cormorat";
 }
+
 
 /* header */
 header{
