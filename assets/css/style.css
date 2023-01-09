@@ -1,60 +1,105 @@
+/* global */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-header{
-    border-bottom: 2px solid;
-}
-.headLine{
-    display: flex;
-    padding: 1rem;
-    justify-content: space-around;
-    
+body{
+    background-color: #e9e9e0;
 }
 
-h1{
-    width: 18rem;
-    padding: 1rem;
-    margin: auto;
+p{
+    font-size: 1.25rem;
 }
 
-main{
-    display:grid;
-    width: 100vw;
-    grid-template-columns: 2fr 1fr 1fr;
+.center{
+    align-self: center;
 }
 
-.gridContainer{
-    width: 40vw;
+
+/* fonts */
+@font-face {
+    font-family: "cormorat";
+    src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+}
+.fontCormorat{
+    font-family: "cormorat";
+}
+
+
+/* main section */
+.gridContainerMainSection{
     display: grid;
-    gap:.5rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.7fr 1.5fr 2fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: .5rem;
+}
+
+/* article container */
+.gridContainerArticle{
+    width: 35vw;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 .articleTitle{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
-.kitchen{
-    width: 30rem;
-    padding-right: .5rem;
+article{
+    width: 18vw;
+}
+
+/* kitchen img */
+figure{
+    grid-column: 2/3;
+    width: 15rem;
+}
+figure img{
+    max-width: 38vw;
+}
+
+
+.knife{
+    grid-column: 1/2;
+}
+
+.equipment{
+    grid-column: 1/2;
+}
+aside{
+    grid-row: 1/3;
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: .5fr;
+
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    text-align: center;
 }
 
 .ikea{
     width: 15rem;
-}
-aside{
-    display: grid;
-    text-align: center;
-    padding-right: .5rem;
+    filter: grayscale(1);
 }
 div{
-    margin-bottom: .5rem;
-    margin-top: 0.5rem;
-    padding-top: 2rem;
-    border: 2px solid;
-    outline: 2px solid;
-    outline-offset: .2rem;
+    border: 5px double grey;
+    padding: 1rem;
+    width: 18rem;
+}
+.knifeAdd{
+    font-size: 2rem;
+}
+
+.center{
+    align-self: center;
+}
+
+.yourAdd{
+    font-size: 3.5rem;
+    width: 17rem;
+}
+.bestKnives{
+    color:grey;
+    text-decoration:underline;
 }
