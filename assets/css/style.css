@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+header{
+    border-bottom: 2px solid;
+}
+.headLine{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    
+}
+
+h1{
+    width: 18rem;
+    padding: 1rem;
+    margin: auto;
+}
+
 main{
     display:grid;
     width: 100vw;
